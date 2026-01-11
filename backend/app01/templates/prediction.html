@@ -1,0 +1,15 @@
+{% load filtrage %}
+<h2>Prédiction du diabète</h2>
+
+
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Prédire</button>
+</form>
+
+{% if result != None %}
+    <h3>Résultat : {{ result|yesno:"Diabète,Pas de diabète" }}</h3>
+    <p>Probabilité : {{ probability|mul:100|floatformat:2 }} %</p>
+{% endif %}
+
