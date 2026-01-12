@@ -1,11 +1,18 @@
+import os
 import numpy as np
 import joblib
-import pandas as pd  # <--- Ajouté pour gérer les noms de colonnes
+import pandas as pd 
 
-# Chargement des fichiers
-theta_final = np.load(r"C:\Users\Mouad\Desktop\Diabest\backend\theta_final.npy")
-best_threshold = np.load(r"C:\Users\Mouad\Desktop\Diabest\backend\best_threshold.npy")
-scaler = joblib.load(r"C:\Users\Mouad\Desktop\Diabest\backend\scaler.pkl") 
+
+CURRENT_DIR = os.path.dirname(os.path.abspath(__file__))
+
+
+BASE_PATH = os.path.abspath(os.path.join(CURRENT_DIR, '..', '..'))
+
+# 3. Charger les fichiers en utilisant le chemin calculé
+theta_final = np.load(os.path.join(BASE_PATH, "theta_final.npy"))
+best_threshold = np.load(os.path.join(BASE_PATH, "best_threshold.npy"))
+scaler = joblib.load(os.path.join(BASE_PATH, "scaler.pkl"))
 
 feature_names = [
     'gender', 'age', 'hypertension', 'heart_disease', 'bmi', 
