@@ -23,12 +23,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-rma12qa+ws#lulnh4n_xc0p3k9p-$#sbn6xy9o9sh5%_)g%$m3'
 SECRET_KEY = os.environ.get('SECRET_KEY', 'ta-cle-par-defaut')
 DEBUG = False  # Très important !
+
 ALLOWED_HOSTS = ['*']
 
-# SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
 
-ALLOWED_HOSTS = ['victorious-danica-mou1d-befcedca.koyeb.app', 'localhost', '127.0.0.1']
 
 
 # Application definition
