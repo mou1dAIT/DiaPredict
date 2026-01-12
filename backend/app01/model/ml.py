@@ -3,9 +3,9 @@ import joblib
 import pandas as pd  # <--- Ajouté pour gérer les noms de colonnes
 
 # Chargement des fichiers
-theta_final = np.load(r"C:\Users\Mouad\Desktop\Diabest\theta_final.npy")
-best_threshold = np.load(r"C:\Users\Mouad\Desktop\Diabest\best_threshold.npy")
-scaler = joblib.load(r"C:\Users\Mouad\Desktop\Diabest\scaler.pkl") 
+theta_final = np.load(r"C:\Users\Mouad\Desktop\Diabest\backend\theta_final.npy")
+best_threshold = np.load(r"C:\Users\Mouad\Desktop\Diabest\backend\best_threshold.npy")
+scaler = joblib.load(r"C:\Users\Mouad\Desktop\Diabest\backend\scaler.pkl") 
 
 feature_names = [
     'gender', 'age', 'hypertension', 'heart_disease', 'bmi', 
