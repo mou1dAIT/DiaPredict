@@ -69,9 +69,9 @@ export default function Footer() {
             <h4 className="text-emerald-500 font-bold uppercase tracking-[0.2em] text-[10px] mb-8">Legal</h4>
             <ul className="space-y-4 text-slate-300 font-medium">
               <li>
-                <NavLink to="/privacy" className="hover:text-white transition-colors text-sm">
-                  Privacy Policy
-                </NavLink>
+                <p className="hover:text-white transition-colors text-sm">
+                  Your health data is not stored on our servers it is processed in real time and deleted as soon as you close the session.
+                </p>
               </li>
               <li className="pt-2 text-[11px] text-slate-500 italic leading-relaxed">
                  Note: This AI tool is for educational purposes and provides estimates based on clinical data.
@@ -84,7 +84,7 @@ export default function Footer() {
         
         <div className="pt-10 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6">
           <div className="text-slate-500 text-[11px] font-bold tracking-widest uppercase">
-            © 2026 DiaPredict AI
+            © 2026 DiaPredict 
           </div>
           <div className="flex gap-3">
              <div className="flex gap-3">
