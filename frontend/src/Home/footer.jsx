@@ -31,7 +31,7 @@ export default function Footer() {
                 D
               </div>
               <span className="text-2xl font-black tracking-tighter text-[#FAF7F2]">
-                Dia<span className="text-emerald-500">Predict</span>
+                Diab<span className="text-emerald-500">Predict</span>
               </span>
             </div>
             <p className="text-slate-400 text-lg leading-relaxed max-w-sm">
@@ -84,7 +84,7 @@ export default function Footer() {
         
         <div className="pt-10 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6">
           <div className="text-slate-500 text-[11px] font-bold tracking-widest uppercase">
-            © 2026 DiaPredict 
+            © 2026 DiaBPredict 
           </div>
           <div className="flex gap-3">
              <div className="flex gap-3">
