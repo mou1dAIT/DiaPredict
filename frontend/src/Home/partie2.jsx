@@ -105,7 +105,7 @@ export default function Partie2() {
                   />
                 </motion.svg>
 
-                {/* Points décoratifs animés */}
+                
                 <motion.div
                   initial={{ scale: 0 }}
                   whileInView={{ scale: 1 }}
@@ -123,14 +123,14 @@ export default function Partie2() {
             </h1>
           </motion.div>
 
-          {/* CARTE STYLISÉE */}
+        
           <motion.div
             variants={fadeUp}
             initial="hidden"
             whileInView="visible"
             className="relative"
           >
-            {/* Badge décoratif animé */}
+            
             <motion.div
               initial={{ x: -20, opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
@@ -146,13 +146,13 @@ export default function Partie2() {
               className="bg-white rounded-[40px] shadow-[0_40px_80px_rgba(6,95,70,0.12)] p-10 md:p-12 border border-emerald-100/50 relative overflow-hidden"
             >
               
-              {/* Cercles décoratifs */}
+             
               <div className="absolute -bottom-20 -right-20 w-64 h-64 bg-gradient-to-br from-emerald-50 to-emerald-100 rounded-full blur-3xl opacity-60" />
               <div className="absolute -top-10 -left-10 w-40 h-40 bg-emerald-200 rounded-full blur-2xl opacity-30" />
 
               <div className="relative z-10 space-y-8">
                 
-                {/* INFO MEDICAL ADVICE avec animation */}
+                
                 <div className="flex items-center gap-4 pb-6 border-b border-emerald-100">
                   <motion.div
                     whileHover={{ rotate: 5, scale: 1.05 }}
@@ -165,7 +165,7 @@ export default function Partie2() {
                   </div>
                 </div>
 
-                {/* TEXTE EXPLICATION */}
+              
                 <div className="space-y-5 text-zinc-700 text-base leading-relaxed">
                   <p>
                     This test is essential to{" "}

@@ -56,7 +56,7 @@ export default function HomeSection() {
                 </motion.button>
               </motion.div>
 
-              {/* Badges de bas de carte */}
+             
               <div className="mt-12 md:ml-auto md:w-[50%] lg:w-full flex flex-col md:flex-row md:items-center justify-between gap-6 border-t border-white/10 pt-8">
                 <div className="flex items-center justify-center gap-3 md:ml-auto">
                   <div className="w-12 h-12 bg-white/10 backdrop-blur-xl rounded-xl flex items-center justify-center text-white border border-white/10">
@@ -73,12 +73,12 @@ export default function HomeSection() {
               </div>
             </div>
 
-            {/* 2. SECTION IMAGE - Retour au style imposant */}
+            
             <div className="relative md:absolute bottom-0 left-0 z-20 w-full md:w-[50%] lg:w-[48%] flex justify-center md:justify-start items-end pointer-events-none">
               <img 
                 src={img1} 
                 alt="Doctor" 
-                /* Ici on remet les hauteurs d'origine (600px/750px) car le texte est maintenant bloqué à droite */
+                
                 className="block w-[90%] md:w-full h-auto object-contain max-h-[420px] md:max-h-[600px] lg:max-h-[750px] translate-y-[1px]" 
                 style={{ 
                     filter: 'drop-shadow(0 20px 50px rgba(0,0,0,0.3))',

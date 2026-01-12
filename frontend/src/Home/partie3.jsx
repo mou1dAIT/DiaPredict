@@ -25,7 +25,7 @@ export default function Partie3() {
     },
   ];
 
-  // Variantes d'animation
+
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
