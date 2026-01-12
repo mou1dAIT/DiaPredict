@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 
-const API_URL = 'http://localhost:8000';
+const API_URL = "https://victorious-danica-mou1d-befcedca.koyeb.app";
 
 export const getDiabetesPrediction = async (formData) => {
   try {
